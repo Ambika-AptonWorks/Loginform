@@ -1,12 +1,18 @@
 body{
-  background:rgb(2,0,36);
+  background-color: rgb(95, 95, 141);
+}
+h1{
+  color:white;
+  font-style: italic;
+  margin-top: 20px ;
+  margin-bottom:30px;
 }
 .container{
   display:flex;
   flex-direction:column;
   justify-content: centre;
   align-items: center;
-  height:100px;
+  height:200px;
   max-width: 500px;
   width:100%;
   margin:auto;
@@ -14,19 +20,14 @@ body{
 .container >form{
   width:70%;
   border:1px solid #dfdfdf;
-  padding:20px;
-  border-radius: 5px;
+  padding:40px;
+  border-radius: 10px;
   background: #fff;
-}
-pre{
-  width:70%;
-  color:#fff;
-  font-size: larger;
-}
- button{
-   background: #0563b4;
- }
- p{
-   color:red;
- }
 
+}
+#btn{
+  margin-top: 20px;
+}
+p{
+  color:red;
+}
