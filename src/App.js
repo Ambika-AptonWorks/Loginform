@@ -64,7 +64,7 @@ function App() {
           </div>
       </form>
       {Object.keys(formerrors).length ===0 && isSubmit ?
-      (<div className='message success'><h2>Signed in successfully!</h2></div>):
+      (<div className='message success'><h2>Signed in successfully &#128578;</h2></div>):
       (<h3>{JSON.stringify(name)}</h3>)}
     </div>
   );
