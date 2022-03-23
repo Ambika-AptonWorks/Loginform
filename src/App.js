@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import './App.css';
+import {Link} from "react-router-dom";
 
 function App() {
   const[name,setName]=useState({username:'',email:'',password:''});
@@ -10,6 +11,7 @@ function App() {
     e.preventDefault();
     setFormErrors(validate(name));
     setIsSubmit(true);
+    
   };
   useEffect(()=>{
     console.log(formerrors);
@@ -64,8 +66,10 @@ function App() {
           </div>
       </form>
       {Object.keys(formerrors).length ===0 && isSubmit ?
-      (<div className='message success'><h2>Signed in successfully &#128578;</h2></div>):
-      (<h3>{JSON.stringify(name)}</h3>)}
+      (<div className='message success'>
+        <div>
+        <h2>Signed in successfully &#128578;</h2></div>
+      </div>): (< ></>)}
     </div>
   );
 }
