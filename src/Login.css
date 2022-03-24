@@ -1,0 +1,38 @@
+body{
+  background-color: rgb(95, 95, 141);
+
+}
+h1{
+  color:white;
+  font-style: italic;
+  margin-top: 20px ;
+  margin-bottom:30px;
+}
+.container{
+  display:flex;
+  flex-direction:column;
+  justify-content: centre;
+  align-items: center;
+  height:auto;
+  max-width: auto;
+  width:auto;
+  margin:auto;
+}
+.container >form{
+  width:auto;
+  border:1px solid #dfdfdf;
+  padding:40px;
+  border-radius: 10px;
+  background: #fff;
+
+}
+
+#btn{
+  margin-top: 20px;
+}
+p{
+  color:red;
+}
+h2{
+  margin-top: 30px;
+}

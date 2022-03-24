@@ -1,8 +1,14 @@
-import React from 'react';
+import React,{useState} from 'react';
 import Itemscart from './Itemscart';
 import Data from './Data';
+import { Navigate } from 'react-router';
+import Cart from "./Cart"
 
 const Home = ()=>{
+   const [logout,setLogout]=useState(false);
+   if (logout){
+       return<Navigate to="/"></Navigate>
+   }
      return(
          <>
            <h1 className='text-center'>All items</h1>
@@ -14,8 +20,11 @@ const Home = ()=>{
                             price={item.price} key={index}></Itemscart>
                         );
                      })}
+                     <button onClick={()=>setLogout(true)}>Logout</button>
                </div>
            </section>
+           
+           <Cart />
          </>
 
      );
