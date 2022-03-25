@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from 'react';
 import './Login.css';
 import {Link, Navigate,Routes,Route,useNavigate} from "react-router-dom"
-import Home from './Components/Home';
+import Parent from './Components/Parent';
 
 function Login() {
   const[name,setName]=useState({username:'',email:'',password:''});
@@ -42,7 +42,7 @@ function Login() {
     return errors;
   };
   if(isSubmit){
-    return<Navigate to="Home"></Navigate>
+    return<Navigate to="Parent"></Navigate>
   }
   return(
     <div className='container'>

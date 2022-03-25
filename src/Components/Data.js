@@ -1,7 +1,9 @@
 
 import img1 from './img1.jpg';
 import img2 from './img2.jpg';
-import img3 from './OIP.jpg';
+import img4 from './img3.jpg';
+import img5 from './img4.jpg';
+
 const Data={
     Productdata:[
         {
@@ -19,11 +21,18 @@ const Data={
             price:270,
           },
           {
-            id:3,
-            img:img3,
-            title:'Grapes',
+            id:4,
+            img:img4,
+            title:'SmartWatch',
             desc:"",
-            price:320,
+            price:1220,
+          },
+          {
+            id:5,
+            img:img5,
+            title:'Camera',
+            desc:"",
+            price:3320,
           },
     ],
 };
